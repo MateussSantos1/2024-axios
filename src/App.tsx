@@ -61,6 +61,8 @@ const App = () => {
   const escutarModificacaoTexto = (evento: any) => {
     setTarefa(evento.target.value);
   }
+
+  // Modificar o EscutarCliqueAcessarAPI para acessar a api JSONPlaceHolder
   const escutarCliqueAcessarAPI = () => {
     console.log("clicou");
     // acesso a API HTTP 
@@ -93,6 +95,9 @@ const App = () => {
         <button onClick={escutarCliqueBotao}>Criar nova tarefa</button>
       </div>
       <div>
+
+        {/* 5-> Editar o arquivo src/App.tsx para adicionar um botão Acessar API e coloque o evento para escutar o clique EscutarCliqueAcessarAPI
+ */}
         <button onClick={escutarCliqueAcessarAPI}>Acessar API</button>
       </div>
       <ListaDeTarefas dados={tarefas}/>
